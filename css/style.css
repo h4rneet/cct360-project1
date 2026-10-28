@@ -1,1 +1,184 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+.site-header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color:#fbf3f7;
+}
+
+.site-header img{
+    width: 100px;
+    padding: 20px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #6E3A56;
+    font-size: 18px;
+
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.hero-banner{
+    background-color: #EDC7DD;
+}
+
+.hero-banner h1{
+    font-size: 50px;
+    padding: 20px;
+    color: #6E3A56;
+}
+
+.hero-banner p{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.btn1{
+    margin: 20px;
+    padding: 5px;
+    color:#6E3A56;
+}
+
+.hero-sidebar{
+    background-color: #DCF1D1;
+}
+
+.hero-sidebar h2{
+    font-size: 30px;
+    padding: 20px;
+    color: #425F42;
+}
+
+.hero-sidebar ul li{
+    list-style-type: none;
+    
+}
+
+.hero-sidebar ul{
+    padding: 20px;
+}
+
+.hero-sidebar a{
+    padding: 20px;
+    color: black;
+
+}
+
+.projects-heading{
+    font-size: 30px;
+    padding: 20px;
+    color:#6E3A56;
+
+    background-color:#fbf3f7;
+}
+
+
+.cards-gallery{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    padding: 10px;
+
+    background-color:#fbf3f7;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #EDC7DD;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.card h3{
+    font-size: 24px;
+    color: #4d2f3e;
+}
+
+.card img{
+    max-width: 100%;
+    border: 5px solid  #f6dbe9;
+}
+
+.btn2{
+    margin-top: auto;
+    color:#6E3A56;
+    padding: 5px;
+}
+
+.site-footer{
+    background-color:#DCF1D1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-footer p{
+    color: #6E3A56;
+}
+
+.site-footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.site-footer ul li {
+    list-style-type: none;
+    font-size: 18px;
+    
+}
+
+.site-footer ul li a{
+    color:#425F42;
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+
+    .site-header{
+        flex-direction: column;
+    }
+
+    .hero-grid{
+        grid-template-columns: 1fr;
+
+    }
+    
+    .cards-gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer{
+        flex-direction: column;
+    }
+}
