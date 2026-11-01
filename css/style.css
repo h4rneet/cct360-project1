@@ -198,6 +198,8 @@
 .detail-hero{
     display: flex;
     flex-direction: column;
+
+    padding: 20px;
 }
 
 .detail-hero h1{
@@ -236,6 +238,9 @@
     align-items: center;
 
     background-color: #EDC7DD;
+
+    gap:20px;
+    padding:20px;
 }
 
 .main-content img{
